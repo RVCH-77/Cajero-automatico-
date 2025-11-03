@@ -1,0 +1,14 @@
+{
+  "name": "cajero-automatico",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Proyecto base del Cajero Automático",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": ["cajero", "atm"],
+  "author": "",
+  "license": "UNLICENSED"
+}
