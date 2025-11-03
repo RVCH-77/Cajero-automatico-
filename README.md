@@ -14,9 +14,13 @@ npm install
 # Ejecutar en modo normal
 npm start
 
+# Instalacion de mysql2
+npm install mysql2 dotenv  
+
 # Ejecutar en modo desarrollo
 npm run dev
 ```
+
 
 ## Estructura
 ```

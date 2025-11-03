@@ -8,7 +8,14 @@
     "start": "node src/index.js",
     "dev": "node src/index.js"
   },
-  "keywords": ["cajero", "atm"],
+  "keywords": [
+    "cajero",
+    "atm"
+  ],
   "author": "",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.15.3"
+  }
 }
