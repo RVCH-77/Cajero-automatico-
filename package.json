@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "description": "Proyecto base del Cajero Automático",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node src/index.js"
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
   },
   "keywords": [
     "cajero",
@@ -15,7 +15,11 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
+    "axios": "^1.13.1",
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
     "mysql2": "^3.15.3"
   }
 }

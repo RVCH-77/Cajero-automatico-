@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1>Cajero Automático</h1>
+
+  <section>
+    <h2>Retirar efectivo</h2>
+    <form id="retirar-form">
+      <label>Número de tarjeta:
+        <input type="text" id="numeroTarjeta" placeholder="0000-0000-0000-0000" />
+      </label>
+      <label>Monto a retirar:
+        <input type="number" id="montoRetiro" value="100" min="1" />
+      </label>
+      <label>NIP:
+        <input type="password" id="nip" placeholder="****" />
+      </label>
+      <label>ID Cajero:
+        <input type="number" id="cajeroId" value="1" min="1" />
+      </label>
+      <label>
+        <input type="checkbox" id="esOtroBanco" /> Retiro de otro banco
+      </label>
+      <button type="button" onclick="retirar()">Retirar</button>
+    </form>
+    <pre id="retirar-result"></pre>
+  </section>
+
+  <script src="/js/cajero.js"></script>
+</body>
+</html>
