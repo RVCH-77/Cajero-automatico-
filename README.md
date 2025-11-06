@@ -25,8 +25,42 @@ npm run dev
 ## Estructura
 ```
 Cajero-automatico-
+├─ public/
+│  ├─ css/
+│  │  └─ style.css
+│  └─ js/
+│     └─ cajero.js
 ├─ src/
-│  └─ index.js
+│  ├─ CQRS/
+│  │  ├─ commands/
+│  │  │  └─ retirar.command.js
+│  │  └─ queries/
+│  │     └─ saldo.query.js
+│  ├─ DAO/
+│  │  ├─ cajero.dao.js
+│  │  └─ cuenta.dao.js
+│  ├─ DB/
+│  │  └─ db.js
+│  ├─ MVC/
+│  │  ├─ controllers/
+│  │  │  └─ cajero.controller.js
+│  │  ├─ models/
+│  │  └─ views/
+│  │     └─ index.ejs
+│  ├─ MVP/
+│  │  └─ cajero.presenter.js
+│  ├─ MVVM/
+│  │  └─ cajero.viewmodel.js
+│  ├─ routes/
+│  │  ├─ banco.routes.js
+│  │  └─ cajero.routes.js
+│  ├─ services/
+│  │  ├─ ApiExterna.js
+│  │  ├─ auth.service.js
+│  │  ├─ cajero.service.js
+│  │  └─ transaccion.service.js
+│  ├─ app.js
+│  └─ server.js
 ├─ package.json
 ├─ package-lock.json
 ├─ .gitignore
