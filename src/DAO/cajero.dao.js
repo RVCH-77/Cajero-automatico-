@@ -13,12 +13,12 @@ module.exports = {
     try {
       await conn.beginTransaction();
       const [rows] = await conn.query('SELECT montoDisponible FROM cajero WHERE idCajero = ? FOR UPDATE', [cajeroId]);
-      if (!rows.length) throw new Error('Cajero no encontrado');
-      const disponible = rows[0].montoDisponible;
-      if (disponible < monto) throw new Error('Cajero sin efectivo suficiente');
-      await conn.query('UPDATE cajero SET montoDisponible = montoDisponible - ? WHERE idCajero = ?', [monto, cajeroId]);
+        if (!rows.length) throw new Error('Cajero no encontrado');
+        const disponible = rows[0].montoDisponible;
+        if (disponible < monto) throw new Error('Cajero sin efectivo suficiente');
+        await conn.query('UPDATE cajero SET montoDisponible = montoDisponible - ? WHERE idCajero = ?', [monto, cajeroId]);
       await conn.commit();
-      return true;
+  return true;
     } catch (err) {
       await conn.rollback();
       throw err;
